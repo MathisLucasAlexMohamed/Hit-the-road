@@ -1,0 +1,245 @@
+.container {width: 80%}
+@media (max-width: 640px) {
+.container {
+position: relative;
+bottom: 0;
+}
+}
+
+body {
+  margin: 0;
+ ;
+}
+.avatar {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+}
+.avatar-md {
+  width: 72px;
+  height: 72px;
+}
+
+.social {
+  margin-left: 25px;
+}
+.banner {
+  background: linear-gradient(135deg, rgba(56, 57, 59, 0.2) 0%, rgba(84, 82, 16, 0.4) 100%), 
+ url(https://static.pexels.com/photos/63324/california-road-highway-mountains-63324.jpeg);
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  padding: 150px 100px;
+  height: 550px;
+  color: white;
+}
+
+.banner2 {
+  background: linear-gradient(135deg, rgba(56, 57, 59, 0.2) 0%, rgba(84, 82, 16, 0.4) 100%), 
+ url(https://static.pexels.com/photos/56832/road-asphalt-space-sky-56832.jpeg);
+  background-size: cover;
+  background-position: center center;
+  text-align: top;
+  padding: 100px 100px;
+  height: 600px;
+  color: white;
+
+}
+
+.banner3 {
+  background: linear-gradient(135deg, rgba(56, 57, 59, 0.2) 0%, rgba(84, 82, 16, 0.4) 100%), 
+ url(https://static.pexels.com/photos/38537/woodland-road-falling-leaf-natural-38537.jpeg);
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  padding: 150px 100px;
+  color: white;
+  height: 600px ;
+  margin-top: : 30px;
+  margin-bottom: 0px;
+}
+body {
+  margin: 20px;
+  font-family: Arial;
+}
+
+.card p {
+  margin: 0;
+}
+.card h4 {
+  margin: 0;
+}
+
+
+h4 {
+  margin: 0;
+}
+
+.card1 {
+  background: yellow;
+  width: 350px;
+  height: 120px;
+  position: relative;
+  background: url(http://www.meteolafleche.com/Dossiers/Abbaretzterrilvuemeteo.png);
+  background-size: cover;
+  color: black;
+  border-radius: 5px;
+  font-family: Arial;
+  
+  text-shadow: 0 0 10px black;
+  margin: 20px;
+}
+
+.card2 {
+  width: 350px;
+  height: 120px;
+  position: relative;
+  background: url(http://blog.neocamino.com/wp-content/uploads/2014/07/8%C2%B0%C3%A9tape-1024x500.png);
+  background-size: cover;
+  color: black;
+  border-radius: 5px;
+  font-family: Arial;
+  
+  text-shadow: 0 0 10px black;
+  margin: 20px;
+}
+
+.card3 {
+  
+  width: 350px;
+  height: 120px;
+  position: relative;
+  background: url(https://www.ouest-france.fr/sites/default/files/styles/image-640x360/public/2013/11/14/un-radar-attaque-fougeres-notre-carte-complete_0.jpg?itok=UY7Gj_K8);
+  background-size: cover;
+  color: black;
+  border-radius: 5px;
+  font-family: Arial;
+  
+  text-shadow: 0 0 10px black;
+  margin: 20px;
+}
+
+.card-title {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.card-title2 {
+  top:  10px;
+  right: 100px;
+}
+body {
+  margin: 0;
+}
+
+.Formule {
+  font-size: 20;
+  background: linear-gradient(135deg, rgba(56, 57, 59, 0.2) 0%, rgba(84, 82, 16, 0.4) 100%), 
+ url(https://static.pexels.com/photos/45775/pexels-photo-45775.jpeg);
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  padding: 150px 100px;
+  color: white;
+}
+
+
+
+.button {
+  background: #1989AC;
+  color: white;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+.button:hover {
+  background: #283E56;
+}
+.button-success {
+  background: #8BC3A;
+}
+
+.button-success:hover {
+  background: #4CAF50;
+} 
+
+.button-sm {
+  font-size: 60%;
+  padding: 6px 10px;
+}
+
+.button-lg {
+  font-size: 120%;
+  padding: 12px 20px;
+}
+.button1 {
+  background: #1989AC;
+  color: white;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 30px;
+  margin: 20px;
+  font-family: Arial;
+}
+
+.button-success1 {
+  background: #8BC34A;
+}
+
+.button-success1:hover {
+  background: #682666;
+} 
+
+.button-lg1 {
+  font-size: 120%;
+  padding: 12px 20px;
+}
+
+.button-block {
+display: block;
+  text-align: center;
+  margin-top: 5px;
+}
+
+$(document).ready(function(){
+
+$('a[href*="#"]')
+
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+      &&
+      location.hostname == this.hostname
+    ) {
+    
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+
+      if (target.length) {
+        
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+      
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) {
+            return false;} 
+            else {
+            $target.attr('tabindex','-1'); 
+            $target.focus(); 
+          };
+        });
+      }
+    }
+  });
+})
+
+
